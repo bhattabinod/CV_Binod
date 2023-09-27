@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0,0,0,0,1);
+    /*
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+    */
+}
+
+
+.container .top{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.container .top .imgBx
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .imgBx .box
+{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.container .top .imgBx .box img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .top .profileText
+{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .profileText h3
+{
+    font-size: 2.4em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+    /*color: #300;*/
+}
+
+.container .top .profileText h3 span
+{
+    position: relative;
+    font-size: 0.7em;
+    font-weight: 50;
+    top: -10px;
+}
+
+.container .contentBox
+{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+
+.container .contentBox h3
+{
+    border-left: 4px solid #E25E3E;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #E25E3E;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.container .contentBox ul
+{
+    position: relative;
+    margin: 10px 0;
+    font-size: 0.62em;
+}
+
+.container .contentBox ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 700;
+    line-height: 1em;
+    /*color: black;*/
+    cursor: pointer;
+    display: flex;
+}
+
+.container .contentBox ul li ion-icon{
+    font-size: 1.4em;
+    margin-right: 10px;
+    color: #FF9B50;
+}
+
+.container .contentBox ul.education li
+{
+    flex-direction: column;
+    margin: 25px 0;
+    font-size: 1.4em;
+    
+}
+
+h5{
+    color: #FF9B50;
+}
+
+h4{
+    
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+h6
+{
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.language li{
+    flex-direction: column;
+}
+
+.language li span{
+font-size: 16px;
+font-weight: 500;
+}
+
+.language .percent
+{
+    position: relative;
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #C34A36
+}
+
+.container .contentBox ul.interest
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.container .contentBox ul.interest li
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    /*color: #E25E3E;*/
+   
+}
+
+.container .contentBox ul.interest li .icon
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #B0A8B9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contentBox ul.interest li .icon ion-icon
+{
+    color: #4B4453;
+    margin-right: 0;
+}
+
+.container .contentBox ul.interest li .icon ion-icon span {
+    color: #333;
+    font-weight: 300;
+}
+
+p{
+    /*color:aqua;*/
+    font-style: 300;
+}
+
+.rightSide
+{
+    padding-left: 10px;
+}
+
+.box .year{
+    
+    padding: 10px 10px;
+}
+
+.about.Skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.about.Skills .box h4{
+    /*color: #333;*/
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.about.Skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #e3e3e3;
+}
+.about.Skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #C34A36;
+}
+
+/* Add this at the end of your CSS file */
+.dark-mode {
+    background: #333;
+    color: #fff;
+
+  }
+  /* #material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 50
+    
+  } */
+  
+/* Add this to your CSS for button styling */
+button#material-symbols-outlined {
+    /* font-size: 15px; */
+    padding: 5px 5px 0px 5px ;
+    /* background-color:#c1c7d0; */
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right; 
+    margin: 0.5%;
+  }
+
+  button#material-symbols-outlined:hover {
+    color:#FFBB5C; /* Change the text color on hover (you can use your desired color) */
+  }
+
+  button#generate-pdf-button {
+    font-size: 15px; 
+    padding: 5px 5px 0px 5px ;
+    background-color:#c1c7d0; 
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right; 
+    margin: 0.5%;
+    text-align: justify;
+    font-size-adjust:  0.58;
+
+  }
